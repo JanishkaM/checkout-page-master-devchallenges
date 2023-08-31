@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif
+}
+
+.m-width {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #4E5150;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .m-width {
+        max-width: 100% !important;
+    }
+
+    .checkout-form {
+        width: 100% !important;
+        margin: 10px auto !important;
+        order: 2;
+    }
+
+    .panel {
+        width: auto !important;
+        margin: 2px !important;
+        padding: 0px !important;
+        order: 1;
+    }
+
+    form select {
+        width: 100% !important;
+    }
+}
+
+.checkout-form {
+    width: 50%;
+}
+
+form legend h2 {
+    margin: 35px 0 20px 0;
+    color: #333333;
+}
+
+form label {
+    font-size: 12px;
+    color: #4F4F4F;
+    padding-bottom: 5px;
+    display: block;
+}
+
+form input,
+select {
+    outline: transparent;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    padding: 12px 8px;
+    display: flex;
+    font-size: 16px;
+    color: #828282;
+    display: inline;
+    position: relative;
+}
+
+.country-feild {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.country-feild .input-feild {
+    flex: 1;
+}
+
+.country-feild .input-feild:last-child {
+    margin-left: 17px;
+}
+
+.save-btn-input {
+    display: flex;
+    align-items: center;
+}
+
+.save-btn-input label {
+    padding: 10px 10px;
+}
+
+.save-btn-input input {
+    width: auto !important;
+    padding: 0px;
+    zoom: 1.5;
+    margin-bottom: 0px;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: end;
+}
+
+.input-feild {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-row input {
+    width: auto;
+    background-color: #F2994A;
+    padding: 14px 25px;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.btn-row input:hover {
+    background-color: #f08c35;
+}
+
+/* =============Panel Css============== */
+.panel {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 40px;
+    width: 40%;
+}
+
+.panel .item .item-box {
+    margin: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.panel .item .item-box .img {
+    flex: 1;
+    margin: 10px;
+}
+
+.panel .item .item-box img {
+    border-radius: 12px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.panel .item .item-box .details {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.panel .item .item-box .details h4 {
+    font-size: 16px;
+    color: #4E5150;
+    margin-bottom: 10px;
+}
+
+.panel .item .item-box .item-counter {
+    display: flex;
+    border: 1px solid #828282;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 12px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.panel .item .item-box .item-counter button {
+    background-color: #E0E0E0;
+    width: 25px;
+    aspect-ratio: 1/1;
+    border: none;
+    padding: 2px;
+    color: #828282;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.panel .item .item-box .item-counter h5 {
+    margin: 0px 25px;
+}
+
+.item-box .price h5 {
+    color: #F2994A;
+    font-size: 1rem;
+}
+
+.item-box .price span {
+    text-decoration: line-through;
+    color: #626564;
+    font-size: .7rem;
+    margin-left: 10px;
+}
+
+.item-price {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.price-row {
+    border-top: 1px solid #DEDEDE;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 25px 10px 25px;
+    padding-top: 15px;
+    font-weight: 400;
+}
+
+
+
+/* ================================== */
+
+.icon-input-feild {
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.icon-input-feild input,
+.icon-input-feild select {
+    flex: 1;
+    background-color: transparent;
+    padding-left: 15px;
+}
+
+.icon-input-feild input:focus {
+    background-color: #fff;
+}
+
+.icon-input-feild select:focus {
+    background-color: #fff;
+}
+
+.icon-input-feild span {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0%, -50%);
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+select {
+    appearance: none;
+    background-image: none;
+    cursor: pointer;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select wrapper */
+select {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Arrow */
+select::after {
+    content: 'e7cd';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+    font-family: 'Material Icons';
+}
+
+/* Transition */
+select:hover::after {
+    color: #f39c12;
+}
+
+.icon-input-feild span::after {
+    content: attr(data-placeholder);
+    font-family: 'Montserrat', sans-serif;
+    color: #828282;
+    font-size: .8rem;
+    margin-left: 8px;
+}
+
+.icon-input-feild select {
+    appearance: none;
+}
+
+.icon-input-feild input:focus .icon-input-feild span {
+    display: none !important;
+}
